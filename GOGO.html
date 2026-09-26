@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: black;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    gap: 12px;
+    padding: 4px;
+}
+
+.block {
+    background: white;
+    border-radius: 14px;
+}
+
+.left {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.left .block:first-child {
+    flex: 2;
+}
+
+.left .block:last-child {
+    flex: 1;
+}
+
+
+.center {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.top {
+    height: 25%;
+    display: flex;
+    gap: 12px;
+}
+
+.top .block {
+    flex: 1;
+}
+
+.main-block {
+    height: 50%;
+}
+
+.bottom {
+    height: 25%;
+    display: flex;
+    gap: 12px;
+}
+
+.bottom .block:first-child {
+    flex: 2;
+}
+
+.bottom .block:last-child {
+    flex: 1;
+}
+
+
+
+.right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.right .block:first-child {
+    flex: 2;
+}
+
+.right .block:last-child {
+    flex: 1;
+}
+</style>
+<body>
+
+<div class="page">
+
+    <div class="left">
+        <div class="block block1"></div>
+        <div class="block block4"></div>
+    </div>
+
+    <div class="center">
+
+        <div class="top">
+            <div class="block block2"></div>
+            <div class="block block3"></div>
+        </div>
+
+        <div class="block block5"></div>
+
+        <div class="bottom">
+            <div class="block block8"></div>
+            <div class="block block9"></div>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div class="block block6"></div>
+        <div class="block block7"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
